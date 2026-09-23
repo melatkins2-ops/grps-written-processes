@@ -1,0 +1,1 @@
+Place the approved GRPS logo here as grps-official-logo.png. The previous external image URL failed to load on the published site. Do not recreate or redraw the district logo. Download the official file from https://grps.org/departments/communications/logos-brand-guide/ and place it in this folder before publishing.

@@ -16,3 +16,8 @@ The Meeting records page includes downloadable agenda, minutes/notes and sign-in
 - Each process has one direct DOCX download pointing to a file in `documents/`. On a published site, a missing document is flagged rather than silently linking to a 404.
 - Upload **all** contents, especially the entire `documents/` folder. GitHub's web uploader may omit folders if only individual files are selected. If an older version is deployed, overwrite the files and verify `documents/` contains 54 DOCX files in GitHub.
 - Header uses the district's official GRPS logo URL. The image requires that the GRPS server makes the URL available; if unavailable, a GRPS text fallback appears. To make it independent of the district server, supply a local copy of the approved logo.
+
+## IMPORTANT: logo and upload repair
+The previous remote logo link was broken. This release uses `assets/grps-official-logo.png` instead. The official binary image is NOT in this ZIP because it could not be retrieved and must not be recreated. Download an approved logo from https://grps.org/departments/communications/logos-brand-guide/ and save it at that exact path before publishing. Until then, the header shows GRPS text.
+
+The prior agenda/minutes/sign-in links pointed to `.html` files that browsers can block or treat as unsafe downloads. They now point to real `.docx` files. All templates must be uploaded in the `templates/` directory. To ensure the published site is current, open the GitHub repository's `templates` folder and confirm the `.docx` files appear; check Actions → Pages build and hard-refresh the published site.
