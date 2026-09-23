@@ -1,23 +1,9 @@
-# GRPS Written Process Collaborative
+# GRPS Written Process Collaborative — Review & Revision Center
 
-Static GitHub Pages site. Upload the contents of this folder to the root of a GitHub repository, then enable Pages under Settings → Pages → Deploy from a branch → main / (root). The site uses local JSON and requires no backend or paid services.
+Upload **index.html** to the root of the existing GitHub repository, replacing the previous index.html. No additional folders are required.
 
-**Review notice:** The 54 DOCX files are working drafts. The historical master index contains 47 records, not 54; 43 site entries matched uniquely to its indicator descriptions. Unmatched entries are shown as not validated. No process is presented as approved based on the Wix CMS label. Search, filters, cards, detail pages and download links are client-side. Editing status requires updating processes.json and republishing.
+This self-contained release includes the official embedded GRPS logo, 54 embedded process documents, embedded meeting templates, the embedded master index, and a Review & Revision Center. The review form downloads a local JSON submission record and does not send information to a server. The revised Word document file input records only the filename; it does not upload or store the file. GRPS must provide its own restricted SharePoint folder and approval workflow; this website is not a document-management system. No procedures are labeled approved without district validation.
 
+Commit message: Add process review and revision center
 
-## GRPS logo and meeting evidence
-The site references the official GRPS logo at https://grps.org/downloads/infohost/communications-external-affairs/grps_district_logo.png. It requires the image to remain available on the GRPS website; if district policy requires a local asset, place an authorized copy in this package and update `index.html`.
-
-The Meeting records page includes downloadable agenda, minutes/notes and sign-in templates plus an evidence register. Retain agenda and minutes/notes for each process update meeting. If notes do not identify attendees, retain a separate sign-in sheet. **Do not upload completed sign-in sheets or sensitive meeting records to this public GitHub repository.** Store originals in approved restricted district storage. The CSV form downloads a local entry and does not synchronize records across users.
-
-
-## Fixes in this release
-- Master index download moved to home page (and remains in the management dashboard), removed from each individual process page and top navigation.
-- Each process has one direct DOCX download pointing to a file in `documents/`. On a published site, a missing document is flagged rather than silently linking to a 404.
-- Upload **all** contents, especially the entire `documents/` folder. GitHub's web uploader may omit folders if only individual files are selected. If an older version is deployed, overwrite the files and verify `documents/` contains 54 DOCX files in GitHub.
-- Header uses the district's official GRPS logo URL. The image requires that the GRPS server makes the URL available; if unavailable, a GRPS text fallback appears. To make it independent of the district server, supply a local copy of the approved logo.
-
-## IMPORTANT: logo and upload repair
-The previous remote logo link was broken. This release uses `assets/grps-official-logo.png` instead. The official binary image is NOT in this ZIP because it could not be retrieved and must not be recreated. Download an approved logo from https://grps.org/departments/communications/logos-brand-guide/ and save it at that exact path before publishing. Until then, the header shows GRPS text.
-
-The prior agenda/minutes/sign-in links pointed to `.html` files that browsers can block or treat as unsafe downloads. They now point to real `.docx` files. All templates must be uploaded in the `templates/` directory. To ensure the published site is current, open the GitHub repository's `templates` folder and confirm the `.docx` files appear; check Actions → Pages build and hard-refresh the published site.
+Extended description: Add per-process review and revision forms, meeting evidence checks, local submission-record export, and explicit restricted SharePoint approval and archiving instructions. Retain the embedded logo, process downloads, meeting templates, and master index.
